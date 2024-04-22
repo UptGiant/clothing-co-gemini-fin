@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evergreen Threads</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .banner {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .banner h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .banner button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .featured-product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .featured-product img {
+            width: 50%;
+        }
+
+        .featured-product h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-info {
+            text-align: left;
+        }
+
+        .product-info p {
+            margin-bottom: 10px;
+        }
+
+        .product-info .price {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-info select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product-info form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .product-info form input {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .product-info a {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Evergreen Threads</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="banner">
+            <h2>Sustainable Style for Everyday Life</h2>
+            <p>Ethically made clothing that looks good and feels good on you and the planet.</p>
+            <button>Shop Now</button>
+        </section>
+
+        <section class="featured-product">
+            <h3>Featured Product</h3>
+            <img src="images/featured-product.jpg" alt="Featured clothing item">
+            <div class="product-info">
+                <h4>The Organic Pima Tee</h4>
+                <p class="price">$34.99</p>
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  </select>
+
+                <form action="#">
+                    <label for="qty">Quantity:</label>
+                    <input type="number" id="qty" name="quantity" min="1" value="1">
+                    <br>
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </section>
+
+        </main>
+
+    <footer>
+        <p>&copy; Evergreen Threads 2024</p>
+    </footer>
+</body>
+</html>
